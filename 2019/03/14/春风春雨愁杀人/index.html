@@ -315,7 +315,22 @@
 		
 		
 
+	
+    <span class="leancloud_visitors" id="/2019/03/14/春风春雨愁杀人/_visitors" data-url="/2019/03/14/春风春雨愁杀人/" data-title="春风春雨愁杀人">
+       	<i class="fa fa-eye"></i>
+       	热度
+        <i class="leancloud_visitors_count" id="leancloud_visitors_count">0</i>
+    </span>
+    
 
+
+
+	
+    <span class="leancloud_likes" id="/2019/03/14/春风春雨愁杀人/_likes" data-url="/2019/03/14/春风春雨愁杀人/" data-title="春风春雨愁杀人" rel="unlike">
+        <i class="fa fa-heart"></i>
+        喜欢
+        <i class="leancloud_likes_count" id="leancloud_likes_count">0</i>
+    </span>
 
 	</div>
 
@@ -647,6 +662,14 @@
 -->
 
 
+
+	<script>
+		var appid = 'ddsi9zOkhs117w2Dn3SomxrW-gzGzoHsz',
+            appkey = '2mPROrXbrfWxdkygWA1Dbvmy';	  
+        AnnieLeancloud(appid, appkey);         
+	</script>
+    
+
 	
 
 
@@ -879,6 +902,23 @@
 		<div class="local-search-footer">
 			<div class="topN-post">				
 				
+
+   
+	<div id="topN">
+		<div class="topN-title" data-title="热门文章"></div> 
+	</div>
+	
+    <script>
+        var appid = 'ddsi9zOkhs117w2Dn3SomxrW-gzGzoHsz',
+            appkey = '2mPROrXbrfWxdkygWA1Dbvmy',
+            limitCount = 10;
+        if( $('#topN').length ){
+            AV.initialize(appid, appkey);
+            var Counter = AV.Object.extend("Counter");  
+            topNPost(Counter, limitCount);
+        }
+    </script>
+   
 								
 			</div>
 		</div>
