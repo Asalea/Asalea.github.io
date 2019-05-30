@@ -779,6 +779,9 @@ footer .copyright p {
   letter-spacing: 1px;
   word-spacing: 1px;
 }
+footer .upyun-logo a {
+  display: inline-block;
+}
 #totop {
   position: fixed;
   right: 16px;
